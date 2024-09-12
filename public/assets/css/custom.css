@@ -1,0 +1,46 @@
+.vcm-structure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.vcm-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 5px 8px rgb(255 255 255 / 10%);
+    padding: 20px;
+    width: 300px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.vcm-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.vcm-card h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+.vcm-card p {
+    margin-bottom: 0;
+}
+.vcm-arrow {
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+@media (max-width: 768px) {
+    .vcm-structure {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .vcm-card {
+        width: auto;
+    }
+    .vcm-arrow {
+        transform: rotate(90deg);
+    }
+}
+.vsm-color{
+    color:#bdb8b8;
+}
