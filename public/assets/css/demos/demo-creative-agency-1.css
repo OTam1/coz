@@ -1220,15 +1220,3 @@ p.lead {
 	animation: arrowMove 600ms ease;
 	animation-iteration-count: infinite;
 }
-
-@media (min-width: 1200px) {
-
-	.hide-footer {
-	visibility:hidden;
-	}
-	}
-	@media (max-width: 1199px) {
-	.hide-footer {
-	display: none;
-	}
-}

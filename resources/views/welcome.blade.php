@@ -592,9 +592,9 @@
                             <div class="p-5 w-100 p-relative z-index-1">
 
                                 <div class="container-fluid w-100 mt-5">
-                                    <div class="row justify-content-center mb-4">
+                                    {{-- <div class="row justify-content-center mb-4">
                                         <div class="col-12 col-xl-8">
-                                            <h2 class="text-color-light">Understanding Carbon Credits</h2>
+                                            <h3 class="text-color-light">Understanding Carbon Credits</h3>
                                         </div>
                                     </div>
 
@@ -607,27 +607,37 @@
                                                     role in combating climate change.</p>
                                             </div>
                                         </div>
+                                    </div> --}}
+
+                                    <div class="row justify-content-center mt-5">
+                                        <div class="col-xl-4 mb-2 mb-xl-0">
+                                            <div class="appear-animation" data-appear-animation="fadeInUpShorter"
+                                                data-appear-animation-delay="250">
+                                                <h3 class="text-color-light">Understanding Carbon Credits</h3>
+                                                <p class="m-0 vsm-color">Carbon credits representing one metric ton of CO2 or
+                                                    equivalent GHG prevented from entering the atmosphere, plays a vital
+                                                    role in combating climate change.</p>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="row justify-content-center mt-5">
-                                        <div class="col-6 col-xl-4">
+                                        <div class="col-xl-4 mb-2 mb-xl-0">
                                             <div class="appear-animation" data-appear-animation="fadeInUpShorter"
                                                 data-appear-animation-delay="250">
-                                                <h2 class="text-color-light">How Carbon Credits are
-                                                    Created</h2>
+                                                <h3 class="text-color-light">How Carbon Credits are
+                                                    Created</h3>
                                                 <p class="m-0 vsm-color">Generated through projects that reduce or remove GHG
                                                     emissions, and undergo validation and verification by standardized
                                                     bodies and independent auditors.</p>
                                             </div>
                                         </div>
-                                        {{-- </div>
 
-                                        <div class="row justify-content-center mt-5"> --}}
-                                        <div class="col-6 col-xl-4">
+                                        <div class="col-xl-4 mb-2 mb-xl-0 mt-5">
                                             <div class="appear-animation" data-appear-animation="fadeInUpShorter"
                                                 data-appear-animation-delay="500">
-                                                <h2 class="text-color-light">Balancing Emissions
-                                                    with Carbon Credits</h2>
+                                                <h3 class="text-color-light">Balancing Emissions
+                                                    with Carbon Credits</h3>
                                                 <p class="m-0 vsm-color">Companies and countries can purchase carbon credits
                                                     to offset their excess emissions, helping to achieve a balanced
                                                     carbon footprint.</p>

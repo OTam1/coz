@@ -78,3 +78,21 @@
     margin-inline-start: 2.5vw;
     max-width: 98%;
 }
+
+@media (min-width: 1200px) {
+
+	.hide-footer {
+	visibility:hidden;
+	}
+	}
+	@media (max-width: 1199px) {
+	.hide-footer {
+	display: none;
+	}
+}
+
+@media (max-width: 1199px) {
+	.mtp-5 {
+		margin-top: 3rem !important;
+	}
+	}
