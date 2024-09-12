@@ -44,3 +44,37 @@
 .vsm-color{
     color:#bdb8b8;
 }
+
+.carousel-wrapper {
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-item {
+    padding: 20px 0; /* Space above and below the images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-item img {
+    max-width: 100%;
+    max-height: 12em; /* Fixed height for consistency */
+    object-fit: contain; /* Ensure image fits without distortion */
+    margin: 0 auto;
+    display: block;
+}
+.owl-custom{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-inline-end: 2.5vw;
+    margin-inline-start: 2.5vw;
+    max-width: 98%;
+}

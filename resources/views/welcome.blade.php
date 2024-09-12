@@ -7,16 +7,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>COZ</title>
+    <title>COZ | كوز</title>
 
     <meta name="keywords" content="COZ" />
     <meta name="description" content="COZ">
     <meta name="author" content="COZ">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
@@ -416,7 +418,47 @@
                             </div>
                         </div>
 
-                        <div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
+                        <div class="vw-xl-80 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
+                            <div class="ps-5 w-100 mb-5 mb-xl-0">
+                                <div class="carousel-wrapper">
+                                <div class="owl-carousel partners owl-theme owl-custom">
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/MOE.jpg' }}"
+                                            alt="Partner 1"></div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/AQWA_POWER.png' }}" alt="Partner 2">
+                                    </div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/gitex_impact.png' }}"
+                                            alt="Partner 3"></div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/GREEN_TECH.png' }}" alt="Partner 4">
+                                    </div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/GS.png' }}"
+                                            alt="Partner 1"></div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/ROOTS.png' }}" alt="Partner 4">
+                                    </div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/SAUDI_ARAMCO.png' }}" alt="Partner 4">
+                                    </div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/tadweeer.png' }}" alt="Partner 4">
+                                    </div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/UN_GLOBAL.png' }}" alt="Partner 4">
+                                    </div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/uplink.png' }}" alt="Partner 4">
+                                    </div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/mycarbon.png' }}" alt="Partner 3"></div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/Verra.png' }}" style="background: black;" alt="Partner 4">
+                                    </div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/waeed.png' }}" alt="Partner 4">
+                                    </div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/world_economic.png' }}" alt="Partner 4">
+                                    </div>
+
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        {{-- OPTION 1 --}}
+
+                        {{-- <div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
                             <div class="ps-5 w-100 mb-5 mb-xl-0">
 
                                 <div class="d-flex flex-column">
@@ -483,7 +525,11 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> --}}
+
+
+                        {{-- OPTION 2 --}}
+
                         {{-- 
 							<div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
 								<div class="ps-5 w-100">
