@@ -418,8 +418,8 @@
                                 <div class="owl-carousel partners owl-theme owl-custom">
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/AQWA_POWER.png' }}" alt="Partner 2">
                                     </div>
-                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/gitex_impact.png' }}"
-                                            alt="Partner 3"></div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/gitex_impact.png' }}" alt="Partner 3">
+                                    </div>
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/GREEN_TECH.png' }}" alt="Partner 4">
                                     </div>
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/Revival_Lab.png' }}" alt="Partner 4">
@@ -433,7 +433,6 @@
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/UN_GLOBAL.png' }}" alt="Partner 4">
                                     </div>
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/uplink.png' }}" alt="Partner 4">
-                                    </div>
                                     </div>
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/waeed.png' }}" alt="Partner 4">
                                     </div>
