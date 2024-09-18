@@ -416,16 +416,14 @@
                             <div class="ps-5 w-100 mb-5 mb-xl-0">
                                 <div class="carousel-wrapper">
                                 <div class="owl-carousel partners owl-theme owl-custom">
-                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/MOE.jpg' }}"
-                                            alt="Partner 1"></div>
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/AQWA_POWER.png' }}" alt="Partner 2">
                                     </div>
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/gitex_impact.png' }}"
                                             alt="Partner 3"></div>
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/GREEN_TECH.png' }}" alt="Partner 4">
                                     </div>
-                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/GS.png' }}"
-                                            alt="Partner 1"></div>
+                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/Revival_Lab.png' }}" alt="Partner 4">
+                                    </div>
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/ROOTS.png' }}" alt="Partner 4">
                                     </div>
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/SAUDI_ARAMCO.png' }}" alt="Partner 4">
@@ -436,8 +434,6 @@
                                     </div>
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/uplink.png' }}" alt="Partner 4">
                                     </div>
-                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/mycarbon.png' }}" alt="Partner 3"></div>
-                                    <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/Verra.png' }}" style="background: black;" alt="Partner 4">
                                     </div>
                                     <div class="item carousel-item"><img src="{{ '/assets/img/our-eco/waeed.png' }}" alt="Partner 4">
                                     </div>
