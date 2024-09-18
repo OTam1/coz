@@ -66,7 +66,7 @@
 }
 .carousel-item img {
     max-width: 100%;
-    max-height: 12em; /* Fixed height for consistency */
+    max-height: 9em; /* Fixed height for consistency */
     object-fit: contain; /* Ensure image fits without distortion */
     margin: 0 auto;
     display: block;
