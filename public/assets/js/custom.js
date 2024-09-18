@@ -3,6 +3,7 @@ jQuery(document).ready(function($){
 
     $('.partners').owlCarousel({
         autoplay: true,
+        autoplayTimeout:1500,
         loop: true,
         margin: 5,
         dots:false,

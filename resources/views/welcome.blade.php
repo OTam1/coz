@@ -132,7 +132,7 @@
 
                         <div class="vw-100 custom-ws-initial min-vh-100 d-flex align-items-center">
 
-                            <div class="custom-el-3 p-absolute d-none d-xl-block">
+                            {{-- <div class="custom-el-3 p-absolute d-none d-xl-block">
                                 <div class="appear-animation" data-appear-animation="fadeInUpShorter"
                                     data-appear-animation-delay="500">
                                     <span class="custom-el-4" data-scroll data-scroll-direction="vertical"
@@ -184,7 +184,7 @@
                                     <span class="custom-el-4" data-scroll data-scroll-direction="vertical"
                                         data-scroll-speed="-1.2"></span>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             {{-- <div class="custom-el-2 p-absolute">
 									<div class="appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="0">
@@ -249,7 +249,7 @@
                             </div>
 
                             <div class="p-absolute transform3dy-n50 top-50pct right-0 text-1 d-none d-xl-block">
-                                <span class="rotate-l-90 d-block text-1 text-uppercase p-relative px-4">
+                                <span class="rotate-l-90 d-block text-4 text-uppercase p-relative px-4">
                                     <i class="fa-solid fa-arrow-down p-absolute left-0 custom-arrow-anim"></i>
                                     Scroll For More
                                     <i class="fa-solid fa-arrow-down p-absolute right-0 custom-arrow-anim"></i>
@@ -264,12 +264,12 @@
                                     <div class="p-2 text-center text-xl-end">
 
                                         <ul class="list-inline mb-0">
-                                            <li
+                                            {{-- <li
                                                 class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
                                                 <a href="http://www.facebook.com/" target="_blank"
                                                     class="text-color-light text-color-hover-primary text-3"><i
                                                         class="fab fa-facebook-f text-3"></i></a>
-                                            </li>
+                                            </li> --}}
                                             <li
                                                 class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
                                                 <a href="http://www.twitter.com/" target="_blank"
@@ -301,22 +301,16 @@
                                 {{-- <h5 class="mt-4 mt-xl-0">Who We Are</h5> --}}
                                 <h2> About Us</h2>
 
-                                <p class="lead">We provide an integrated carbon trading platform that aims to promote
-                                    environmental sustainability by serving all stakeholders in achieving carbon
-                                    balance.</p>
+                                <p class="lead">We are a Saudi-based technology company dedicated to digitizing and streamlining the carbon credit origination process. </p>
 
-                                <p>Through our platform, we offer Organizations with a positive impact on the
-                                    environment a unique opportunity to verify the eligibility of their projects and
-                                    issue certified carbon credits. These certificates represent the efforts made to
-                                    reduce carbon emissions, which can then be sold to buyers through our platform in a
-                                    safe and transparent manner.</p>
+                                <p>Our mission is to empower the sustainable development of the national climate mitigation projects and support the achievements of Net Zero Targets.</p>
 
-                                <p class="text-2">In return, we offer Organizations seeking to offset their carbon
+                                {{-- <p class="text-2">In return, we offer Organizations seeking to offset their carbon
                                     emissions the ability to purchase carbon credits to offset their emissions. Through
                                     our platform, these entities can access reliable and credible carbon credits, which
                                     helps them achieve their environmental goals and comply with regulatory standards.
                                     We believe that integration between these parties is the key to achieving carbon
-                                    balance that contributes to building a more sustainable future for all.</p>
+                                    balance that contributes to building a more sustainable future for all.</p> --}}
 
                             </div>
                         </div>
@@ -344,7 +338,7 @@
 
                         <div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
                             <div class="p-5 text-color-light">
-                                <h5 class="mt-4 mt-xl-0 text-color-light">What We Do</h5>
+                                <h5 class="mt-4 mt-xl-0 text-color-light">What We do</h5>
                                 <h2 class="text-color-light">Carbon Mitigation Projects End-To-End Services</h2>
 
                                 <p class="lead text-color-light">From eligibility assessment to carbon credit sales.
@@ -578,7 +572,7 @@
 
                     </section>
                     <section
-                        class="d-xl-flex flex-row pb-5 pb-xl-0 p-relative vh-xl-100 min-vh-xl-100 justify-content-center align-items-center bg-color-secondary text-color-light">
+                        class="vw-xl-75 d-xl-flex flex-row pb-5 pb-xl-0 p-relative vh-xl-100 min-vh-xl-100 justify-content-center align-items-center bg-color-secondary text-color-light">
 
                         <div
                             class="vw-xl-87 custom-ws-initial min-vh-xl-100 d-flex align-items-center text-center p-relative overflow-hidden">
@@ -622,7 +616,7 @@
                                     </div>
 
                                     <div class="row justify-content-center mt-5">
-                                        <div class="col-xl-4 mb-2 mb-xl-0">
+                                        <div class="col-xl-4 mb-2 mb-xl-0 mt-5">
                                             <div class="appear-animation" data-appear-animation="fadeInUpShorter"
                                                 data-appear-animation-delay="250">
                                                 <h3 class="text-color-light">How Carbon Credits are
@@ -645,7 +639,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="row justify-content-center mt-5">
+                                    {{-- <div class="row justify-content-center mt-5">
                                         <div class="vcm-structure">
                                             <div class="vcm-card">
                                                 <h2 class="text-8">Standard</h2>
@@ -677,7 +671,7 @@
                                                 <p class="vsm-color">The result of using carbon credits to compensate for emissions.</p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
                                 </div>
                             </div>
@@ -691,7 +685,7 @@
                         <div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
                             <div class="p-5 w-100">
                                 {{-- <h5 class="mt-4 mt-xl-0">Lorem ipsum</h5> --}}
-                                <h2>How Do we work</h2>
+                                <h2>How do we work</h2>
 
                                 {{-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
 
@@ -772,7 +766,7 @@
                         <div
                             class="min-vw-xl-75 custom-ws-initial min-vh-xl-100 d-flex align-items-center p-relative overflow-hidden">
 
-                            <div class="p-absolute custom-el-5">
+                            {{-- <div class="p-absolute custom-el-5">
                                 <span class="custom-el-4" data-scroll data-scroll-direction="vertical"
                                     data-scroll-speed="-1.6"></span>
                                 <span class="custom-el-4" data-scroll data-scroll-direction="vertical"
@@ -800,7 +794,7 @@
                                     data-scroll-speed="-0.8"></span>
                                 <span class="custom-el-4" data-scroll data-scroll-direction="vertical"
                                     data-scroll-speed="-1.0"></span>
-                            </div>
+                            </div> --}}
 
                             <div class="p-5 text-color-light w-100 text-center p-relative z-index-1">
 
@@ -823,7 +817,8 @@
                                                 data-appear-animation-delay="100">
                                                 <p class="text-3 text-xl-5 text-color-light"><a
                                                         href="mailto:Engage@coz.sa"
-                                                        class="text-color-light">Engage@coz.sa</a></p>
+                                                        class="text-color-light"style="text-decoration: underline;">
+                                                        Engage@coz.sa</a></p>
                                             </div>
                                         </div>
                                         <div class="col-xl-3 text-start hide-footer">
@@ -844,8 +839,8 @@
                                                 class="text-color-light opacity-6 font-weight-normal mb-4 mt-4 mt-xl-0">
                                                 Our Location</h4>
                                             <ul class="list-unstyled custom-list-1 text-1">
-                                                <li>Saudi Arabia.</li>
-                                                <li>Riyadh, Malga 41520</li>
+                                                <li>Saudi Arabia</li>
+                                                <li>Riyadh, Al-Malqa </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -855,12 +850,12 @@
                                         </div>
                                         <div class="col-12 col-xl-5 text-center text-xl-end pe-5">
                                             <ul class="list-inline mt-3 mt-xl-0 mb-0">
-                                                <li
+                                                {{-- <li
                                                     class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
                                                     <a href="http://www.facebook.com/" target="_blank"
                                                         class="text-color-light text-color-hover-primary text-3"><i
                                                             class="fab fa-facebook-f text-3"></i></a>
-                                                </li>
+                                                </li> --}}
                                                 <li
                                                     class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
                                                     <a href="http://www.twitter.com/" target="_blank"
