@@ -271,17 +271,17 @@
                                                         class="fab fa-facebook-f text-3"></i></a>
                                             </li> --}}
                                             <li
-                                                class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
-                                                <a href="http://www.twitter.com/" target="_blank"
-                                                    class="text-color-light text-color-hover-primary text-3"><i
-                                                        class="fab fa-x-twitter text-3"></i></a>
-                                            </li>
-                                            <li
-                                                class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
-                                                <a href="http://www.instagram.com/" target="_blank"
-                                                    class="text-color-light text-color-hover-primary text-3"><i
-                                                        class="fab fa-instagram text-3"></i></a>
-                                            </li>
+                                            class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
+                                            <a href="https://www.linkedin.com/company/coz-ksa/?viewAsMember=true/" target="_blank"
+                                                class="text-color-light text-color-hover-primary text-3"><i
+                                                    class="fab fa-linkedin text-3"></i></a>
+                                        </li>
+                                        <li
+                                            class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
+                                            <a href="http://www.x.com/Coz_ksa" target="_blank"
+                                                class="text-color-light text-color-hover-primary text-3"><i
+                                                    class="fab fa-x-twitter text-3"></i></a>
+                                        </li>
                                         </ul>
 
                                     </div>
@@ -845,23 +845,17 @@
                                         </div>
                                         <div class="col-12 col-xl-5 text-center text-xl-end pe-5">
                                             <ul class="list-inline mt-3 mt-xl-0 mb-0">
-                                                {{-- <li
-                                                    class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
-                                                    <a href="http://www.facebook.com/" target="_blank"
-                                                        class="text-color-light text-color-hover-primary text-3"><i
-                                                            class="fab fa-facebook-f text-3"></i></a>
-                                                </li> --}}
                                                 <li
                                                     class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
-                                                    <a href="http://www.twitter.com/" target="_blank"
+                                                    <a href="https://www.linkedin.com/company/coz-ksa/?viewAsMember=true/" target="_blank"
                                                         class="text-color-light text-color-hover-primary text-3"><i
-                                                            class="fab fa-x-twitter text-3"></i></a>
+                                                            class="fab fa-linkedin text-3"></i></a>
                                                 </li>
                                                 <li
                                                     class="list-inline-item px-1 anim-hover-translate-top-5px transition-2ms">
-                                                    <a href="http://www.instagram.com/" target="_blank"
+                                                    <a href="http://www.x.com/Coz_ksa" target="_blank"
                                                         class="text-color-light text-color-hover-primary text-3"><i
-                                                            class="fab fa-instagram text-3"></i></a>
+                                                            class="fab fa-x-twitter text-3"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
