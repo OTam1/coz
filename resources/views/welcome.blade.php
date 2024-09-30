@@ -350,8 +350,7 @@
                         </div>
                         <div
                             class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-flex align-items-center custom-border-left-1">
-                            <div class="p-5 text-color-light" data-scroll data-scroll-direction="vertical"
-                                data-scroll-speed="-0.3" data-scroll-offset="-100%">
+                            <div class="p-5 text-color-light" >
                                 <img width="100" src="assets/img/demos/creative-agency-1/icons/icon-1.svg"
                                     alt="" data-icon
                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light'}" />
@@ -361,8 +360,7 @@
                             </div>
                         </div>
                         <div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
-                            <div class="p-5 text-color-light" data-scroll data-scroll-direction="vertical"
-                                data-scroll-speed="0.3" data-scroll-offset="-100%">
+                            <div class="p-5 text-color-light">
                                 <img width="100" src="assets/img/demos/creative-agency-1/icons/icon-2.svg"
                                     alt="" data-icon
                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light'}" />
@@ -373,8 +371,7 @@
                             </div>
                         </div>
                         <div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
-                            <div class="p-5 text-color-light" data-scroll data-scroll-direction="vertical"
-                                data-scroll-speed="-0.3" data-scroll-offset="-100%">
+                            <div class="p-5 text-color-light" >
                                 <img width="100" src="assets/img/demos/creative-agency-1/icons/icon-3.svg"
                                     alt="" data-icon
                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light'}" />
@@ -384,8 +381,13 @@
                             </div>
                         </div>
                         <div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
-                            <div class="p-5 text-color-light" data-scroll data-scroll-direction="vertical"
-                                data-scroll-speed="0.3" data-scroll-offset="-100%">
+                            <div class="p-5 text-color-light" > 
+                                {{-- data-scroll data-scroll-direction="vertical"
+                                data-scroll-speed="0.3" data-scroll-offset="-100%" --}}
+
+
+
+
                                 <img width="100" src="assets/img/demos/creative-agency-1/icons/icon-4.svg"
                                     alt="" data-icon
                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light'}" />
