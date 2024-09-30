@@ -867,10 +867,16 @@
 
                     </section>
                 </div>
-            </div>
+            </div> 
 
         </div>
+
     </div>
+
+    <div class="nav-arrows">
+        <a href="#" class="arrow left-arrow">&larr;</a>
+        <a href="#" class="arrow right-arrow">&rarr;</a>
+    </div>  
 
     {{-- <a class="style-switcher-open-loader" href="#" data-base-path="" data-skin-src="master/less/skin-creative-agency-1.less" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Style Switcher" aria-label="Style Switcher"><i class="fas fa-cogs"></i><div class="style-switcher-tooltip"><strong>Style Switcher</strong><p>Check out different color options and styles.</p></div></a> --}}
 
@@ -878,6 +884,8 @@
     <script src="assets/vendor/plugins/js/plugins.min.js"></script>
     <script src="assets/vendor/gsap/gsap.min.js"></script>
     <script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
     <script src="assets/vendor/locomotive-scroll/locomotive-scroll.min.js"></script>
 
     <!-- Theme Base, Components and Settings -->

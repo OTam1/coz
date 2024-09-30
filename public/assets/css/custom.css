@@ -96,3 +96,17 @@
 		margin-top: 3rem !important;
 	}
 	}
+
+    .nav-arrows {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+      
+      .arrow {
+        margin: 0 10px;
+        font-size: 24px;
+        text-decoration: none;
+      }
+      
+      
