@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-    gsap.config({nullTargetWarn:false});
+    // gsap.config({nullTargetWarn:false});
 
     $('.partners').owlCarousel({
         autoplay: true,
@@ -27,6 +27,8 @@ jQuery(document).ready(function($){
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth >= 2000) {
+
     const sections = document.querySelectorAll('section');
     let currentIndex = 0;
 
@@ -85,8 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault(); // Prevent default scroll
             }
         }
-    }, 1000)); // Adjust the wait time as needed (e.g., 500ms)
+    }, 3000)); // Adjust the wait time as needed (e.g., 500ms)
 
     // Initial arrow update
     updateArrows();
+}
 });
