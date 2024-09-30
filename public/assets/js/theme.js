@@ -669,62 +669,62 @@ window.theme.fn = {
 	/*
 	* Thumb Info Floating Element
 	*/
-	if( $('.thumb-info-floating-element-wrapper').length ) {
+	// if( $('.thumb-info-floating-element-wrapper').length ) {
 
-		if (typeof gsap !== 'undefined') {
+	// 	if (typeof gsap !== 'undefined') {
 
-			$('.thumb-info-floating-element-wrapper').on('mouseenter', function({clientX, clientY}) {
+	// 		$('.thumb-info-floating-element-wrapper').on('mouseenter', function({clientX, clientY}) {
 				
-				if(!$(this).data('offset')) {
-					$(this).data('offset', 0);
-				}
+	// 			if(!$(this).data('offset')) {
+	// 				$(this).data('offset', 0);
+	// 			}
 
-				const offset = parseInt($(this).data('offset'));
+	// 			const offset = parseInt($(this).data('offset'));
 
-				$('.thumb-info-floating-element-clone').remove();
+	// 			$('.thumb-info-floating-element-clone').remove();
 
-				$('.thumb-info-floating-element', $(this)).clone().addClass('thumb-info-floating-element-clone p-fixed p-events-none').attr('style', 'transform: scale(0.1);').removeClass('d-none').appendTo('body');
+	// 			$('.thumb-info-floating-element', $(this)).clone().addClass('thumb-info-floating-element-clone p-fixed p-events-none').attr('style', 'transform: scale(0.1);').removeClass('d-none').appendTo('body');
 
-				$('.thumb-info-floating-element-clone').css({
-					left: clientX + (offset),
-					top: clientY + (offset)
-				}).fadeIn(300);
+	// 			$('.thumb-info-floating-element-clone').css({
+	// 				left: clientX + (offset),
+	// 				top: clientY + (offset)
+	// 			}).fadeIn(300);
 
-				gsap.to('.thumb-info-floating-element-clone', 0.5, {
-					css: {
-						scaleX: 1,
-						scaleY: 1
-					}
-				});
+	// 			gsap.to('.thumb-info-floating-element-clone', 0.5, {
+	// 				css: {
+	// 					scaleX: 1,
+	// 					scaleY: 1
+	// 				}
+	// 			});
 
-				$(document).off('mousemove').on('mousemove', ({clientX, clientY}) => {
+	// 			$(document).off('mousemove').on('mousemove', ({clientX, clientY}) => {
 
-					gsap.to('.thumb-info-floating-element-clone', 0.5, {
-						css: {
-							left: clientX + (offset),
-							top: clientY + (offset)
-						}
-					});
+	// 				gsap.to('.thumb-info-floating-element-clone', 0.5, {
+	// 					css: {
+	// 						left: clientX + (offset),
+	// 						top: clientY + (offset)
+	// 					}
+	// 				});
 
-				});
+	// 			});
 
-			}).on('mouseout', () => {
+	// 		}).on('mouseout', () => {
 
-				gsap.to('.thumb-info-floating-element-clone', 0.5, {
-					css: {
-						scaleX: 0.5,
-						scaleY: 0.5,
-						opacity: 0
-					}
-				});
+	// 			gsap.to('.thumb-info-floating-element-clone', 0.5, {
+	// 				css: {
+	// 					scaleX: 0.5,
+	// 					scaleY: 0.5,
+	// 					opacity: 0
+	// 				}
+	// 			});
 
-			});
+	// 		});
 
-		} else {
-			theme.fn.showErrorMessage('Failed to Load File', 'Failed to load: GSAP - Include the following file(s): (vendor/gsap/gsap.min.js)');
-		}
+	// 	} else {
+	// 		theme.fn.showErrorMessage('Failed to Load File', 'Failed to load: GSAP - Include the following file(s): (vendor/gsap/gsap.min.js)');
+	// 	}
 
-	}
+	// }
 
 	/*
 	* Thumb Info Direction Aware
