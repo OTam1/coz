@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault(); // Prevent default scroll
             }
         }
-    }, 10000)); // Adjust the wait time as needed (e.g., 500ms)
+    }, 1000)); // Adjust the wait time as needed (e.g., 500ms)
 
     // Initial arrow update
     updateArrows();
