@@ -874,10 +874,18 @@
     </div>
 
     <div class="nav-arrows">
-        <a href="#" class="arrow left-arrow">&larr;</a>
-        <a href="#" class="arrow right-arrow">&rarr;</a>
-    </div>  
-
+        <a href="#" class="arrows left-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                <path fill="#5c1f99" d="M6.715 1.293a.97.97 0 0 1 .281.688.99.99 0 0 1-.281.72L3.432 5.982h9.567c.563 0 1.001.47 1.001 1 0 .501-.438 1.002-1 1.002H3.431l3.283 3.314a.964.964 0 0 1 0 1.407.964.964 0 0 1-1.407 0L.305 7.703a.964.964 0 0 1 0-1.407l5.003-5.003a.964.964 0 0 1 1.407 0Z"></path>
+            </svg>
+        </a>
+        <a href="#" class="arrows right-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                <path fill="#5c1f99" d="M7.285 12.707a.97.97 0 0 1-.281-.688.99.99 0 0 1 .281-.72l3.283-3.282H1.001c-.563 0-1.001-.47-1.001-1 0-.501.438-1.002 1-1.002h9.568L7.285 2.702a.964.964 0 0 1 0-1.407.964.964 0 0 1 1.407 0l5.003 5.003a.964.964 0 0 1 0 1.407l-5.003 5.003a.964.964 0 0 1-1.407 0Z"></path>
+            </svg>
+        </a>
+    </div>
+            
     {{-- <a class="style-switcher-open-loader" href="#" data-base-path="" data-skin-src="master/less/skin-creative-agency-1.less" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Style Switcher" aria-label="Style Switcher"><i class="fas fa-cogs"></i><div class="style-switcher-tooltip"><strong>Style Switcher</strong><p>Check out different color options and styles.</p></div></a> --}}
 
     <!-- Vendor -->
