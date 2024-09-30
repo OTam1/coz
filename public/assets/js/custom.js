@@ -26,50 +26,67 @@ jQuery(document).ready(function($){
     
 });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const locoScroll = new LocomotiveScroll({
-//         el: document.querySelector('.smoothScroll'),
-//         smooth: true,
-//     });
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section');
+    let currentIndex = 0;
 
-//     const sections = document.querySelectorAll('section');
-//     let currentIndex = 0;
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
 
-//     const leftArrow = document.querySelector('.left-arrow');
-//     const rightArrow = document.querySelector('.right-arrow');
+    function updateArrows() {
+        leftArrow.style.display = currentIndex === 0 ? 'none' : 'block';
+        rightArrow.style.display = currentIndex === sections.length - 1 ? 'none' : 'block';
+    }
 
-//     function updateArrows() {
-//         // Hide the left arrow if at the first section
-//         leftArrow.style.display = currentIndex === 0 ? 'none' : 'block';
-        
-//         // Hide the right arrow if at the last section
-//         rightArrow.style.display = currentIndex === sections.length - 1 ? 'none' : 'block';
-//     }
+    function scrollToSection(index) {
+        sections[index].scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+        currentIndex = index;
+        updateArrows();
+    }
 
-//     function scrollToSection(index) {
-//         currentIndex = index; // Update current index
-//         locoScroll.scrollTo(sections[index], {
-//             duration: 1000, // Duration for scrolling
-//             easing: [0.25, 0.00, 0.35, 1.00], // Easing function for smoothness
-//             offset: 0 // Optional: Set offset if needed
-//         });
-//         updateArrows(); // Update arrow visibility after scrolling
-//     }
+    leftArrow.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (currentIndex > 0) {
+            scrollToSection(currentIndex - 1);
+        }
+    });
 
-//     leftArrow.addEventListener('click', function(e) {
-//         e.preventDefault();
-//         if (currentIndex > 0) {
-//             scrollToSection(currentIndex - 1);
-//         }
-//     });
+    rightArrow.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (currentIndex < sections.length - 1) {
+            scrollToSection(currentIndex + 1);
+        }
+    });
 
-//     rightArrow.addEventListener('click', function(e) {
-//         e.preventDefault();
-//         if (currentIndex < sections.length - 1) {
-//             scrollToSection(currentIndex + 1);
-//         }
-//     });
+    // Throttle function
+    function throttle(fn, wait) {
+        let time = Date.now();
+        return function() {
+            if ((time + wait - Date.now()) < 0) {
+                fn.apply(this, arguments);
+                time = Date.now();
+            }
+        };
+    }
 
-//     // Initial arrow state
-//     updateArrows();
-// });
+    // Mouse Wheel Event Listener with Throttling
+    window.addEventListener('wheel', throttle(function(e) {
+        if (e.deltaY > 0) { // Scrolling down
+            if (currentIndex < sections.length - 1) {
+                scrollToSection(currentIndex + 1);
+                e.preventDefault(); // Prevent default scroll
+            }
+        } else if (e.deltaY < 0) { // Scrolling up
+            if (currentIndex > 0) {
+                scrollToSection(currentIndex - 1);
+                e.preventDefault(); // Prevent default scroll
+            }
+        }
+    }, 500)); // Adjust the wait time as needed (e.g., 500ms)
+
+    // Initial arrow update
+    updateArrows();
+});
