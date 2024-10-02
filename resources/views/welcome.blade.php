@@ -894,7 +894,7 @@
     <script src="assets/vendor/plugins/js/plugins.min.js"></script>
     <script src="assets/vendor/gsap/gsap.min.js"></script>
     <script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script>
 
     <script src="assets/vendor/locomotive-scroll/locomotive-scroll.min.js"></script>
 
