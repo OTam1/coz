@@ -50,7 +50,7 @@
     <link id="skinCSS" rel="stylesheet" href="assets/css/skins/skin-creative-agency-1.css">
 
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom.css?v=2">
 
 </head>
 
@@ -899,13 +899,13 @@
     <script src="assets/vendor/locomotive-scroll/locomotive-scroll.min.js"></script>
 
     <!-- Theme Base, Components and Settings -->
-    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/theme.js?v=2"></script>
 
     <!-- Demo -->
     <script src="assets/js/demos/demo-creative-agency-1.js"></script>
 
     <!-- Theme Custom -->
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/custom.js?v=2"></script>
 
     <!-- Theme Initialization Files -->
     <script src="assets/js/theme.init.js"></script>
