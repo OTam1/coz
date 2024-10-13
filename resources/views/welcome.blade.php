@@ -50,7 +50,7 @@
     <link id="skinCSS" rel="stylesheet" href="assets/css/skins/skin-creative-agency-1.css">
 
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom.css?v=2">
 
 </head>
 
@@ -907,12 +907,12 @@
     </div>
     @else
     <div class="nav-arrows">
-        <a href="#" class="arrows left-arrow">
+        <a class="arrows left-arrow">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
                 <path fill="#5c1f99" d="M6.715 1.293a.97.97 0 0 1 .281.688.99.99 0 0 1-.281.72L3.432 5.982h9.567c.563 0 1.001.47 1.001 1 0 .501-.438 1.002-1 1.002H3.431l3.283 3.314a.964.964 0 0 1 0 1.407.964.964 0 0 1-1.407 0L.305 7.703a.964.964 0 0 1 0-1.407l5.003-5.003a.964.964 0 0 1 1.407 0Z"></path>
             </svg>
         </a>
-        <a href="#" class="arrows right-arrow">
+        <a class="arrows right-arrow">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
                 <path fill="#5c1f99" d="M7.285 12.707a.97.97 0 0 1-.281-.688.99.99 0 0 1 .281-.72l3.283-3.282H1.001c-.563 0-1.001-.47-1.001-1 0-.501.438-1.002 1-1.002h9.568L7.285 2.702a.964.964 0 0 1 0-1.407.964.964 0 0 1 1.407 0l5.003 5.003a.964.964 0 0 1 0 1.407l-5.003 5.003a.964.964 0 0 1-1.407 0Z"></path>
             </svg>
@@ -926,18 +926,18 @@
     <script src="assets/vendor/plugins/js/plugins.min.js"></script>
     <script src="assets/vendor/gsap/gsap.min.js"></script>
     <script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script>
 
     <script src="assets/vendor/locomotive-scroll/locomotive-scroll.min.js"></script>
 
     <!-- Theme Base, Components and Settings -->
-    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/theme.js?v=2"></script>
 
     <!-- Demo -->
     <script src="assets/js/demos/demo-creative-agency-1.js"></script>
 
     <!-- Theme Custom -->
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/custom.js?v=3"></script>
 
     <!-- Theme Initialization Files -->
     <script src="assets/js/theme.init.js"></script>
