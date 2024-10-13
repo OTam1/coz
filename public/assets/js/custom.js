@@ -26,7 +26,6 @@ jQuery(document).ready(function($){
     
 });
 
-<<<<<<< HEAD
 // document.addEventListener('DOMContentLoaded', function() {
 //     if (window.innerWidth >= 2000) {
 
@@ -98,10 +97,6 @@ jQuery(document).ready(function($){
 
 document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth < 2000) return; // Ensure the script only runs on large screens
-=======
-document.addEventListener('DOMContentLoaded', function() {
-    if (window.innerWidth >= 1200) {
->>>>>>> 4cdf43ceefba6e555111a0a43485b538602c77dc
 
     const sections = document.querySelectorAll('section');
     let currentIndex = 0;
