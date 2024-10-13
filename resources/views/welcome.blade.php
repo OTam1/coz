@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}" >
 
 <head>
 
@@ -70,7 +70,7 @@
                                     <div class="header-column">
                                         <div class="header-row">
                                             <div class="header-logo">
-                                                <a href="index.html">
+                                                <a href="#">
                                                     {{-- <img alt="Porto" width="120" height="auto"
                                                         src="assets/img/logo.png"> --}}
                                                         <img alt="Porto" width="120" height="auto"
@@ -89,32 +89,69 @@
                                                     <nav class="collapse">
                                                         <ul class="nav nav-pills" id="mainNav">
                                                             <li class="dropdown">
-                                                                <a href="#home" data-hash class="nav-link">
-                                                                    Home
+                                                                <a href="#home" 
+                                                                
+                                                                data-hash class="nav-link"
+                                                                >
+                                                                    @lang('home.home')
                                                                 </a>
                                                             </li>
                                                             <li class="dropdown">
-                                                                <a href="#about" data-hash class="nav-link">
-                                                                    About
+                                                                <a href="#about" 
+                                                                @if (App::getLocale() === 'ar')
+                                                                @else
+                                                                data-hash class="nav-link"
+                                                                @endif
+                                                                >
+                                                                    @lang('home.about')
                                                                 </a>
                                                             </li>
                                                             <li class="dropdown">
-                                                                <a href="#services" data-hash class="nav-link">
-                                                                    Services
+                                                                <a href="#services" 
+                                                                @if (App::getLocale() === 'ar')
+                                                                @else
+                                                                data-hash class="nav-link"
+                                                                @endif
+                                                                >
+                                                                    @lang('home.services')
                                                                 </a>
                                                             </li>
                                                             <li class="dropdown">
-                                                                <a href="#work" data-hash class="nav-link">
-                                                                    Work
+                                                                <a href="#work"
+                                                                @if (App::getLocale() === 'ar')
+                                                                @else
+                                                                data-hash class="nav-link"
+                                                                @endif
+                                                                 >
+                                                                    @lang('home.work')
                                                                 </a>
                                                             </li>
                                                             <li class="dropdown">
-                                                                <a href="#contact" data-hash class="nav-link">
-                                                                    Contact <span
+                                                                <a href="#contact"
+                                                                @if (App::getLocale() === 'ar')
+                                                                @else
+                                                                 data-hash class="nav-link"
+                                                                 @endif
+                                                                 >
+                                                                    @lang('home.contact')
+                                                                    {{-- <span
                                                                         class="btn btn-default text-color-light bg-primary btn-circle border-0 btn-md ms-2"><i
-                                                                            class="fas fa-arrow-right"></i></span>
+                                                                            class="fas fa-arrow-right"></i></span> --}}
                                                                 </a>
                                                             </li>
+                                                            @if (App::getLocale() === 'en')
+                                                            <li>
+                                                                <a href="{{ route('locale', 'ar') }}">
+                                                                    العربية
+                                                                </a>
+                                                            </li>
+                                                            @else
+                                                            <li>
+                                                                <a href="{{ route('locale', 'en') }}">
+                                                                    English
+                                                                </a>
+                                                            </li>
+                                                            @endif
                                                         </ul>
                                                     </nav>
                                                 </div>
@@ -211,7 +248,7 @@
                                                 <span class="d-block me-xl-5" data-scroll
                                                     data-scroll-direction="horizontal" data-scroll-speed="-0.5">
                                                     <strong
-                                                        class="custom-hero-font-1 custom-stroke-text-effect-1">COZ</strong>
+                                                        class="custom-hero-font-1 custom-stroke-text-effect-1">@lang('home.coz')</strong>
                                                 </span>
                                             </div>
                                         </div>
@@ -239,8 +276,7 @@
                                                 <span class="d-block" data-scroll data-scroll-direction="horizontal"
                                                     data-scroll-speed="2">
                                                     <strong
-                                                        class="custom-hero-font-2 text-color-light text-uppercase">Saudi’s first carbon credits origination and offsetting
-                                                        platform.</strong>
+                                                        class="custom-hero-font-2 text-color-light text-uppercase">@lang('home.intro_title')</strong>
                                                 </span>
                                             </div>
                                         </div>
@@ -248,18 +284,27 @@
                                 </div>
                             </div>
 
+                            @if (App::getLocale() === 'ar')
+                            <div class="p-absolute transform3dy-n50 top-50pct left-0 text-1 d-none d-xl-block">
+                                <span class="rotate-l-90 d-block text-4 text-uppercase p-relative px-4">
+                                    <i class="fa-solid fa-arrow-down p-absolute left-0 custom-arrow-anim" style="rotate: 181deg;"></i>
+                                    @lang('home.scroll')
+                                    <i class="fa-solid fa-arrow-down p-absolute right-0 custom-arrow-anim" style="rotate: 181deg;"></i>
+                                </span>
+                            </div>
+                            @else
                             <div class="p-absolute transform3dy-n50 top-50pct right-0 text-1 d-none d-xl-block">
                                 <span class="rotate-l-90 d-block text-4 text-uppercase p-relative px-4">
                                     <i class="fa-solid fa-arrow-down p-absolute left-0 custom-arrow-anim"></i>
-                                    Scroll For More
+                                    @lang('home.scroll')
                                     <i class="fa-solid fa-arrow-down p-absolute right-0 custom-arrow-anim"></i>
                                 </span>
                             </div>
-
+                            @endif
                             <div class="p-absolute w-100 bottom-20 px-4">
                                 <div class="d-xl-flex justify-content-between">
                                     <div class="p-2 text-center text-xl-start">
-                                        <p class="m-0 text-0-5">© Copyright 2024. All Rights Reserved.</p>
+                                        <p class="m-0 text-0-5">@lang('home.copyright')</p>
                                     </div>
                                     <div class="p-2 text-center text-xl-end">
 
@@ -299,11 +344,11 @@
                         <div class="col-lg-6 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
                             <div class="p-5 w-100">
                                 {{-- <h5 class="mt-4 mt-xl-0">Who We Are</h5> --}}
-                                <h2> About Us</h2>
+                                <h2> @lang('home.aboutus') </h2>
 
-                                <p class="lead">We are a Saudi-based technology company dedicated to digitizing and streamlining the carbon credit origination process. </p>
+                                <p class="lead">@lang('home.about_title')</p>
 
-                                <p>Our mission is to empower the sustainable development of the national climate mitigation projects and support the achievements of Net Zero Targets.</p>
+                                <p>@lang('home.about_para')</p>
 
                                 {{-- <p class="text-2">In return, we offer Organizations seeking to offset their carbon
                                     emissions the ability to purchase carbon credits to offset their emissions. Through
@@ -338,14 +383,12 @@
 
                         <div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
                             <div class="p-5 text-color-light">
-                                <h5 class="mt-4 mt-xl-0 text-color-light">What We do</h5>
-                                <h2 class="text-color-light">Carbon Mitigation Projects End-To-End Services</h2>
+                                <h5 class="mt-4 mt-xl-0 text-color-light">@lang('home.what_we_do')</h5>
+                                <h2 class="text-color-light">@lang('home.what_we_do_title')</h2>
 
-                                <p class="lead text-color-light">From eligibility assessment to carbon credit sales.
-                                </p>
+                                <p class="lead text-color-light">@lang('home.what_we_do_para')</p>
                                 <a href="#contact" data-hash
-                                    class="custom-link-1 custom-link-1-light text-color-light">Try our Initial
-                                    Assessment Tool</a>
+                                    class="custom-link-1 custom-link-1-light text-color-light">@lang('home.what_we_do_try')</a>
                             </div>
                         </div>
                         <div
@@ -354,9 +397,8 @@
                                 <img width="100" src="assets/img/demos/creative-agency-1/icons/icon-1.svg"
                                     alt="" data-icon
                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light'}" />
-                                <h3 class="text-color-light mt-4">Streamlined Process</h3>
-                                <p class="text-color-light opacity-8 font-weight-normal pt-3">for Carbon Credit
-                                    Origination and Issuance, with expert guidance on industry standards.</p>
+                                <h3 class="text-color-light mt-4">@lang('home.what_we_do_1_title')</h3>
+                                <p class="text-color-light opacity-8 font-weight-normal pt-3">@lang('home.what_we_do_1_para')</p>
                             </div>
                         </div>
                         <div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
@@ -364,10 +406,8 @@
                                 <img width="100" src="assets/img/demos/creative-agency-1/icons/icon-2.svg"
                                     alt="" data-icon
                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light'}" />
-                                <h3 class="text-color-light mt-4">Innovative Tools</h3>
-                                <p class="text-color-light opacity-8 font-weight-normal pt-3">for efficient Eligibility
-                                    Assessment and Project Design Document (PDD) development to support the project from
-                                    eligibility assessment to Carbon Credits Issuance.</p>
+                                <h3 class="text-color-light mt-4">@lang('home.what_we_do_2_title')</h3>
+                                <p class="text-color-light opacity-8 font-weight-normal pt-3">@lang('home.what_we_do_2_para')</p>
                             </div>
                         </div>
                         <div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
@@ -375,9 +415,8 @@
                                 <img width="100" src="assets/img/demos/creative-agency-1/icons/icon-3.svg"
                                     alt="" data-icon
                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light'}" />
-                                <h3 class="text-color-light mt-4">Service Marketplace</h3>
-                                <p class="text-color-light opacity-8 font-weight-normal pt-3">Access to top service
-                                    providers for all project stages.</p>
+                                <h3 class="text-color-light mt-4">@lang('home.what_we_do_3_title')</h3>
+                                <p class="text-color-light opacity-8 font-weight-normal pt-3">@lang('home.what_we_do_3_para')</p>
                             </div>
                         </div>
                         <div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
@@ -391,9 +430,8 @@
                                 <img width="100" src="assets/img/demos/creative-agency-1/icons/icon-4.svg"
                                     alt="" data-icon
                                     data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-stroke-color-light'}" />
-                                <h3 class="text-color-light mt-4">Portfolio Management</h3>
-                                <p class="text-color-light opacity-8 font-weight-normal pt-3">Comprehensive portfolio
-                                    management to achieve sustainability goals.</p>
+                                <h3 class="text-color-light mt-4">@lang('home.what_we_do_4_title')</h3>
+                                <p class="text-color-light opacity-8 font-weight-normal pt-3">@lang('home.what_we_do_4_para')</p>
                             </div>
                         </div>
 
@@ -406,7 +444,7 @@
                             class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-flex align-items-center custom-border-right-1">
                             <div class="p-5 w-100">
                                 {{-- <h5 class="mt-4 mt-xl-0">Our Ecosystem</h5> --}}
-                                <h2>Our Ecosystem</h2>
+                                <h2>@lang('home.ecosystem')</h2>
 
                                 {{-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
@@ -414,7 +452,7 @@
                             </div>
                         </div>
 
-                        <div class="vw-xl-80 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
+                        <div class="vw-xl-80 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center" style="direction: ltr !important">
                             <div class="ps-5 w-100 mb-5 mb-xl-0">
                                 <div class="carousel-wrapper">
                                 <div class="owl-carousel partners owl-theme owl-custom">
@@ -604,10 +642,8 @@
                                         <div class="col-xl-4 mb-2 mb-xl-0">
                                             <div class="appear-animation" data-appear-animation="fadeInUpShorter"
                                                 data-appear-animation-delay="250">
-                                                <h3 class="text-color-light">Understanding Carbon Credits</h3>
-                                                <p class="m-0 vsm-color">Carbon credits representing one metric ton of CO2 or
-                                                    equivalent GHG prevented from entering the atmosphere, plays a vital
-                                                    role in combating climate change.</p>
+                                                <h3 class="text-color-light">@lang('home.1_title')</h3>
+                                                <p class="m-0 vsm-color">@lang('home.1_para')</p>
                                             </div>
                                         </div>
                                     </div>
@@ -616,22 +652,16 @@
                                         <div class="col-xl-4 mb-2 mb-xl-0 mt-5">
                                             <div class="appear-animation" data-appear-animation="fadeInUpShorter"
                                                 data-appear-animation-delay="250">
-                                                <h3 class="text-color-light">How Carbon Credits are
-                                                    Created</h3>
-                                                <p class="m-0 vsm-color">Generated through projects that reduce or remove GHG
-                                                    emissions, and undergo validation and verification by standardized
-                                                    bodies and independent auditors.</p>
+                                                <h3 class="text-color-light">@lang('home.2_title')</h3>
+                                                <p class="m-0 vsm-color">@lang('home.2_para')</p>
                                             </div>
                                         </div>
 
                                         <div class="col-xl-4 mb-2 mb-xl-0 mt-5">
                                             <div class="appear-animation" data-appear-animation="fadeInUpShorter"
                                                 data-appear-animation-delay="500">
-                                                <h3 class="text-color-light">Balancing Emissions
-                                                    with Carbon Credits</h3>
-                                                <p class="m-0 vsm-color">Companies and countries can purchase carbon credits
-                                                    to offset their excess emissions, helping to achieve a balanced
-                                                    carbon footprint.</p>
+                                                <h3 class="text-color-light">@lang('home.3_title')</h3>
+                                                <p class="m-0 vsm-color">@lang('home.3_para')</p>
                                             </div>
                                         </div>
                                     </div>
@@ -682,7 +712,7 @@
                         <div class="vw-xl-25 custom-ws-initial min-vh-xl-100 d-xl-flex align-items-center">
                             <div class="p-5 w-100">
                                 {{-- <h5 class="mt-4 mt-xl-0">Lorem ipsum</h5> --}}
-                                <h2>How do we work</h2>
+                                <h2>@lang('home.hdww_title')</h2>
 
                                 {{-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
 
@@ -697,58 +727,46 @@
                                     <div class="row mb-4 pb-4 custom-border-bottom-2">
                                         <div class="col-xl-2 mb-2 mb-xl-0">
                                             <span
-                                                class="badge badge-dark rounded-pill text-uppercase px-2 py-1 me-1">Step
-                                                1</span>
+                                                class="badge badge-dark rounded-pill text-uppercase px-2 py-1 me-1">@lang('home.hdww_1_step')</span>
                                         </div>
                                         <div class="col-12 col-xl-3">
-                                            <a class="text-color-dark font-weight-semibold text-4 line-height-4">Qualification
-                                                Check</a>
+                                            <a class="text-color-dark font-weight-semibold text-4 line-height-4">@lang('home.hdww_1_title')</a>
                                         </div>
-                                        <div class="col-12 col-xl-7">We check the qualification of the project to
-                                            generate the carbon credits.
+                                        <div class="col-12 col-xl-7">@lang('home.hdww_1_para')
                                         </div>
                                     </div>
                                     <div class="row mb-4 pb-4 custom-border-bottom-2">
                                         <div class="col-xl-2 mb-2 mb-xl-0">
                                             <span
-                                                class="badge badge-dark rounded-pill text-uppercase px-2 py-1 me-1">Step
-                                                2</span>
+                                                class="badge badge-dark rounded-pill text-uppercase px-2 py-1 me-1">@lang('home.hdww_2_step')</span>
                                         </div>
                                         <div class="col-12 col-xl-3">
-                                            <a class="text-color-dark font-weight-semibold text-4 line-height-4">Due
-                                                Diligence</a>
+                                            <a class="text-color-dark font-weight-semibold text-4 line-height-4">@lang('home.hdww_2_title')</a>
                                         </div>
-                                        <div class="col-12 col-xl-7">We create a comprehensive, tailored Due Diligence
-                                            report to evaluate the carbon credit potential of your project.
+                                        <div class="col-12 col-xl-7">@lang('home.hdww_2_para')
                                         </div>
                                     </div>
                                     <div class="row mb-4 pb-4 custom-border-bottom-2">
                                         <div class="col-xl-2 mb-2 mb-xl-0">
                                             <span
-                                                class="badge badge-dark rounded-pill text-uppercase px-2 py-1 me-1">Step
-                                                3</span>
+                                                class="badge badge-dark rounded-pill text-uppercase px-2 py-1 me-1">@lang('home.hdww_3_step')</span>
                                         </div>
                                         <div class="col-12 col-xl-3">
-                                            <a class="text-color-dark font-weight-semibold text-4 line-height-4">Project
-                                                Execution</a>
+                                            <a class="text-color-dark font-weight-semibold text-4 line-height-4">@lang('home.hdww_3_title')</a>
                                         </div>
-                                        <div class="col-12 col-xl-7">We facilitate the entire execution process of your
-                                            carbon project to begin generating credits while maintaining the highest
-                                            value.
+                                        <div class="col-12 col-xl-7">@lang('home.hdww_3_para')
                                         </div>
                                     </div>
                                     <div class="row mb-4 pb-4 custom-border-bottom-2">
                                         <div class="col-xl-2 mb-2 mb-xl-0">
                                             <span
-                                                class="badge badge-dark rounded-pill text-uppercase px-2 py-1 me-1">Step
-                                                4</span>
+                                                class="badge badge-dark rounded-pill text-uppercase px-2 py-1 me-1">@lang('home.hdww_4_step')</span>
                                         </div>
                                         <div class="col-12 col-xl-3">
                                             <a
-                                                class="text-color-dark font-weight-semibold text-4 line-height-4">Monetization</a>
+                                                class="text-color-dark font-weight-semibold text-4 line-height-4">@lang('home.hdww_4_title')</a>
                                         </div>
-                                        <div class="col-12 col-xl-7">We leverage our premium buyer network to maximize
-                                            revenue from the sale of your carbon credits.
+                                        <div class="col-12 col-xl-7">@lang('home.hdww_4_para')
                                         </div>
                                     </div>
                                 </div>
@@ -798,12 +816,12 @@
                                 <div class="container-fluid w-100 mt-5 ms-xl-5">
                                     <div class="row mb-4 justify-content-center">
                                         <div class="col-12 col-xl-10 text-start">
-                                            <h2 class="text-color-light">Ready to take action?</h2>
+                                            <h2 class="text-color-light">@lang('home.rtta')</h2>
                                         </div>
                                     </div>
                                     <div class="row mb-4 justify-content-center">
                                         <div class="col-xl-4 text-start">
-                                            <h4 class="text-color-light opacity-6 font-weight-normal mb-4">Let’s Talk
+                                            <h4 class="text-color-light opacity-6 font-weight-normal mb-4">@lang('home.lt')
                                             </h4>
                                             {{-- <div class="appear-animation" data-appear-animation="fadeInUpShorter"
                                                 data-appear-animation-delay="0">
@@ -834,16 +852,16 @@
                                         <div class="col-xl-3 text-start">
                                             <h4
                                                 class="text-color-light opacity-6 font-weight-normal mb-4 mt-4 mt-xl-0">
-                                                Our Location</h4>
+                                                @lang('home.ol')</h4>
                                             <ul class="list-unstyled custom-list-1 text-1">
-                                                <li>Saudi Arabia</li>
-                                                <li>Riyadh, Al-Malqa </li>
+                                                <li>@lang('home.sa')</li>
+                                                <li>@lang('home.riyadh') </li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="row mb-4 mt-4 justify-content-center">
                                         <div class="col-12 col-xl-5 text-center text-xl-start">
-                                            <p class="m-0 text-0-5">© Copyright 2024. All Rights Reserved.</p>
+                                            <p class="m-0 text-0-5">@lang('home.copyright') </p>
                                         </div>
                                         <div class="col-12 col-xl-5 text-center text-xl-end pe-5">
                                             <ul class="list-inline mt-3 mt-xl-0 mb-0">
@@ -874,7 +892,20 @@
         </div>
 
     </div>
-
+    @if (App::getLocale() === 'ar')
+    <div class="nav-arrows">
+        <a href="#" class="arrows left-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                <path fill="#5c1f99" d="M7.285 12.707a.97.97 0 0 1-.281-.688.99.99 0 0 1 .281-.72l3.283-3.282H1.001c-.563 0-1.001-.47-1.001-1 0-.501.438-1.002 1-1.002h9.568L7.285 2.702a.964.964 0 0 1 0-1.407.964.964 0 0 1 1.407 0l5.003 5.003a.964.964 0 0 1 0 1.407l-5.003 5.003a.964.964 0 0 1-1.407 0Z"></path>
+            </svg>
+        </a>
+        <a href="#" class="arrows right-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                <path fill="#5c1f99" d="M6.715 1.293a.97.97 0 0 1 .281.688.99.99 0 0 1-.281.72L3.432 5.982h9.567c.563 0 1.001.47 1.001 1 0 .501-.438 1.002-1 1.002H3.431l3.283 3.314a.964.964 0 0 1 0 1.407.964.964 0 0 1-1.407 0L.305 7.703a.964.964 0 0 1 0-1.407l5.003-5.003a.964.964 0 0 1 1.407 0Z"></path>
+            </svg>
+        </a>
+    </div>
+    @else
     <div class="nav-arrows">
         <a href="#" class="arrows left-arrow">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
@@ -887,6 +918,7 @@
             </svg>
         </a>
     </div>
+    @endif
             
     {{-- <a class="style-switcher-open-loader" href="#" data-base-path="" data-skin-src="master/less/skin-creative-agency-1.less" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Style Switcher" aria-label="Style Switcher"><i class="fas fa-cogs"></i><div class="style-switcher-tooltip"><strong>Style Switcher</strong><p>Check out different color options and styles.</p></div></a> --}}
 
