@@ -96,7 +96,7 @@ jQuery(document).ready(function($){
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    if (window.innerWidth < 2000) return; // Ensure the script only runs on large screens
+    if (window.innerWidth < 1200) return; // Ensure the script only runs on large screens
 
     const sections = document.querySelectorAll('section');
     let currentIndex = 0;

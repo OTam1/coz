@@ -931,7 +931,7 @@
     <script src="assets/vendor/locomotive-scroll/locomotive-scroll.min.js"></script>
 
         <!-- Theme Custom -->
-        <script src="assets/js/custom.js?v=5"></script>
+        <script src="assets/js/custom.js?v=6"></script>
 
     <!-- Theme Base, Components and Settings -->
     <script src="assets/js/theme.js?v=2"></script>
