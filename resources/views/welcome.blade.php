@@ -930,14 +930,15 @@
 
     <script src="assets/vendor/locomotive-scroll/locomotive-scroll.min.js"></script>
 
+        <!-- Theme Custom -->
+        <script src="assets/js/custom.js?v=5"></script>
+
     <!-- Theme Base, Components and Settings -->
     <script src="assets/js/theme.js?v=2"></script>
 
     <!-- Demo -->
     <script src="assets/js/demos/demo-creative-agency-1.js"></script>
 
-    <!-- Theme Custom -->
-    <script src="assets/js/custom.js?v=5"></script>
 
     <!-- Theme Initialization Files -->
     <script src="assets/js/theme.init.js"></script>
