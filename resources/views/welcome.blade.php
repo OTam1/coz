@@ -937,7 +937,7 @@
     <script src="assets/js/demos/demo-creative-agency-1.js"></script>
 
     <!-- Theme Custom -->
-    <script src="assets/js/custom.js?v=3"></script>
+    <script src="assets/js/custom.js?v=4"></script>
 
     <!-- Theme Initialization Files -->
     <script src="assets/js/theme.init.js"></script>
