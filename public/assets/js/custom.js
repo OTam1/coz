@@ -96,6 +96,7 @@ jQuery(document).ready(function($){
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    console.log("Script loaded and event listener registered.");
     if (window.innerWidth < 2000) return; // Ensure the script only runs on large screens
 
     const sections = document.querySelectorAll('section');
