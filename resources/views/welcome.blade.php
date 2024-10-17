@@ -814,11 +814,11 @@
                             <div class="p-5 text-color-light w-100 text-center p-relative z-index-1">
 
                                 <div class="container-fluid w-100 mt-5 ms-xl-5">
-                                    <div class="row mb-4 justify-content-center">
+                                    {{-- <div class="row mb-4 justify-content-center">
                                         <div class="col-12 col-xl-10 text-start">
                                             <h2 class="text-color-light">@lang('home.rtta')</h2>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="row mb-4 justify-content-center">
                                         <div class="col-xl-4 text-start">
                                             <h4 class="text-color-light opacity-6 font-weight-normal mb-4">@lang('home.lt')

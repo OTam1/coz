@@ -56,7 +56,7 @@ return [
     'hdww_4_para' => 'We leverage our premium buyer network to maximize revenue from the sale of your carbon credits.',
 
     'rtta' => 'Ready to take action?',
-    'lt' => 'Ready to take action?',
+    'lt' => 'Contact us',
 
     'ol' => 'Our Location',
     'sa' => 'Saudi Arabia',
